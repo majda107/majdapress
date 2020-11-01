@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace App.Database
 {
-    public class DatabaseContenxt : IdentityDbContext<ApplicationUser, IdentityRole, string>
+    public class DatabaseContext : IdentityDbContext<ApplicationUser, IdentityRole, string>
     {
         public DbSet<Domain> Domains { get; set; }
 
-        public DatabaseContenxt(DbContextOptions o) : base(o)
+        public DatabaseContext(DbContextOptions o) : base(o)
         {
         }
     }

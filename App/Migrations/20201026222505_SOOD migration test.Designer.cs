@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace App.Migrations
 {
-    [DbContext(typeof(DatabaseContenxt))]
+    [DbContext(typeof(DatabaseContext))]
     [Migration("20201026222505_SOOD migration test")]
     partial class SOODmigrationtest
     {

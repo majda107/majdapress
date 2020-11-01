@@ -26,7 +26,7 @@ namespace App
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<DatabaseContenxt>(o =>
+            services.AddDbContext<DatabaseContext>(o =>
             {
                 o.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
